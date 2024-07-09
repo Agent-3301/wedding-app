@@ -28,7 +28,7 @@ body, html {
 
 .welcome-text {
     font-size: 2em;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
     margin-bottom: 20px;
     text-align: center; /* Center text */
     z-index: 1;
@@ -40,7 +40,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
     font-size: 2.5em; /* Increase countdown text size */
     margin-bottom: 20px;
     z-index: 1;
@@ -54,16 +54,16 @@ body, html {
 .time {
     display: block;
     font-size: 1.5em;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
 }
 
 .label {
     font-size: 0.8em;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
 }
 
 .welcome-button {
-    background-color: #50c878; /* Updated color */
+    background-color: #3e9d5b; /* Updated color */
     color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 15px 30px;
@@ -82,7 +82,7 @@ body, html {
 }
 
 .welcome-button:hover {
-    background-color: #3e9d5b; /* Slightly darker green on hover */
+    background-color: #2b7a3e; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
@@ -130,8 +130,12 @@ body, html {
     margin-top: 20px; /* Add margin for spacing */
 }
 
+#rsvp-button {
+    align-self: flex-start; /* Align RSVP button to the left */
+}
+
 .landing-button {
-    background-color: #50c878; /* Updated color */
+    background-color: #3e9d5b; /* Updated color */
     color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 10px 20px;
@@ -143,13 +147,13 @@ body, html {
 }
 
 .landing-button:hover {
-    background-color: #3e9d5b; /* Slightly darker green on hover */
+    background-color: #2b7a3e; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 .info-header {
     text-align: center;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
     margin-bottom: 20px;
 }
 
@@ -175,7 +179,7 @@ body, html {
 }
 
 .back-button button {
-    background-color: #50c878; /* Updated color */
+    background-color: #3e9d5b; /* Updated color */
     color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 10px 20px;
@@ -187,13 +191,13 @@ body, html {
 }
 
 .back-button button:hover {
-    background-color: #3e9d5b; /* Slightly darker green on hover */
+    background-color: #2b7a3e; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 .collage-header {
     text-align: center;
-    color: #50c878; /* Updated color */
+    color: #3e9d5b; /* Updated color */
     margin-bottom: 20px;
 }
 
