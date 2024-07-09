@@ -247,3 +247,35 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* RSVP Form Styles */
+#rsvp-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#rsvp-page label {
+    font-weight: bold;
+    color: #3e9d5b; /* Updated color */
+}
+
+#rsvp-page input, #rsvp-page button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#rsvp-page button {
+    background-color: #3e9d5b; /* Updated color */
+    color: #F7E7CE;
+    border: none;
+    cursor: pointer;
+}
+
+#rsvp-page button:hover {
+    background-color: #2b7a3e; /* Slightly darker green on hover */
+}
