@@ -20,6 +20,12 @@ body, html {
     pointer-events: none;
 }
 
+.welcome-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add margin to space out elements */
+}
+
 .welcome-text {
     font-size: 2em;
     color: #104410; /* Updated color */
@@ -98,9 +104,12 @@ body, html {
 }
 
 .countdown-timer.small {
+    display: flex;
+    justify-content: center; /* Center horizontally */
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1.1em; /* Slightly larger than the original small size */
 }
 
