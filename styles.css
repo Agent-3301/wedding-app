@@ -23,7 +23,7 @@ body, html {
 
 .welcome-text {
     font-size: 2em;
-    color: #104410; /* Updated color */
+    color: #F7E7CE; /* Updated color */
     margin-bottom: 20px;
     z-index: 1;
     font-style: italic;
