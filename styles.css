@@ -12,7 +12,6 @@ body, html {
     height: 100%;
     background-color: #F7E7CE; /* Updated background color */
     overflow: hidden;
-    position: relative;
     padding: 20px; /* Add padding to prevent touching edges */
 }
 
@@ -25,9 +24,36 @@ body, html {
     font-size: 2em;
     color: #104410; /* Updated color */
     margin-bottom: 20px;
+    text-align: center; /* Center text */
     z-index: 1;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow */
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #104410; /* Updated color */
+    font-size: 2.5em; /* Increase countdown text size */
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.time-unit {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.time {
+    display: block;
+    font-size: 1.5em;
+    color: #104410; /* Updated color */
+}
+
+.label {
+    font-size: 0.8em;
+    color: #104410; /* Updated color */
 }
 
 .welcome-button {
@@ -42,7 +68,7 @@ body, html {
     opacity: 0;
     transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
     z-index: 1;
-    margin-bottom: 20px; /* Add margin to create space */
+    margin-top: 20px; /* Ensure the button is below the countdown */
 }
 
 .show-button {
@@ -71,37 +97,11 @@ body, html {
     z-index: 0;
 }
 
-.countdown-timer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #104410; /* Updated color */
-    font-size: 2.5em; /* Increase countdown text size */
-    margin-bottom: 20px;
-    z-index: 1;
-}
-
 .countdown-timer.small {
     position: absolute;
     top: 20px;
     left: 20px;
     font-size: 1.1em; /* Slightly larger than the original small size */
-}
-
-.time-unit {
-    margin: 0 10px;
-    text-align: center;
-}
-
-.time {
-    display: block;
-    font-size: 1.5em;
-    color: #104410; /* Updated color */
-}
-
-.label {
-    font-size: 0.8em;
-    color: #104410; /* Updated color */
 }
 
 .landing-buttons {
