@@ -1,0 +1,209 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1a1a1a; /* Darker, almost black background */
+    overflow: hidden;
+    position: relative;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.welcome-text {
+    font-size: 2em;
+    color: gold;
+    margin-bottom: 20px;
+    z-index: 1;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow */
+}
+
+.welcome-button {
+    background-color: #FFD700; /* More golden color */
+    color: black; /* Change text color to black */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+    z-index: 1;
+}
+
+.show-button {
+    opacity: 1;
+}
+
+.welcome-button:hover {
+    background-color: #FFC107; /* Slightly darker golden on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+@keyframes moveDiamonds {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.diamonds-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('white_diamonds.png') repeat;
+    background-size: contain;
+    animation: moveDiamonds 40s linear infinite;
+    z-index: 0;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.countdown-timer.small {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.1em; /* Slightly larger than the original small size */
+}
+
+.time-unit {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.time {
+    display: block;
+    font-size: 1.5em;
+    color: gold;
+}
+
+.label {
+    font-size: 0.8em;
+    color: white; /* Ensure the label is visible */
+}
+
+.landing-buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1;
+}
+
+.landing-button {
+    background-color: #FFD700;
+    color: black; /* Change text color to black */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.landing-button:hover {
+    background-color: #FFC107; /* Slightly darker golden on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.info-header {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    text-align: left;
+    color: white;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+}
+
+.info-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-content li {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button button {
+    background-color: #FFD700;
+    color: black; /* Change text color to black */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #FFC107; /* Slightly darker golden on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.collage-header {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.collage-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img, .gallery video {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collage-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
