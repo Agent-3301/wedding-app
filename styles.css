@@ -32,10 +32,10 @@ body, html {
 
 .welcome-button {
     background-color: #104410; /* Updated color */
-    color: black; /* Change text color to black */
+    color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increase button text size */
     cursor: pointer;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
@@ -76,7 +76,7 @@ body, html {
     justify-content: center;
     align-items: center;
     color: #104410; /* Updated color */
-    font-size: 2em;
+    font-size: 2.5em; /* Increase countdown text size */
     margin-bottom: 20px;
     z-index: 1;
 }
@@ -105,20 +105,21 @@ body, html {
 }
 
 .landing-buttons {
-    position: absolute;
-    bottom: 20px;
+    position: relative; /* Adjust position for spacing */
+    top: 10px; /* Adjust spacing to reduce distance from countdown */
     display: flex;
     justify-content: space-around;
     width: 100%;
     z-index: 1;
+    margin-top: 20px; /* Add margin for spacing */
 }
 
 .landing-button {
     background-color: #104410; /* Updated color */
-    color: black; /* Change text color to black */
+    color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.5em; /* Increase button text size */
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
@@ -159,10 +160,10 @@ body, html {
 
 .back-button button {
     background-color: #104410; /* Updated color */
-    color: black; /* Change text color to black */
+    color: #F7E7CE; /* Updated text color */
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.5em; /* Increase button text size */
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
