@@ -10,9 +10,10 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #1a1a1a; /* Darker, almost black background */
+    background-color: #F7E7CE; /* Updated background color */
     overflow: hidden;
     position: relative;
+    padding: 20px; /* Add padding to prevent touching edges */
 }
 
 .hidden {
@@ -22,7 +23,7 @@ body, html {
 
 .welcome-text {
     font-size: 2em;
-    color: gold;
+    color: #104410; /* Updated color */
     margin-bottom: 20px;
     z-index: 1;
     font-style: italic;
@@ -30,7 +31,7 @@ body, html {
 }
 
 .welcome-button {
-    background-color: #FFD700; /* More golden color */
+    background-color: #104410; /* Updated color */
     color: black; /* Change text color to black */
     border: none;
     padding: 15px 30px;
@@ -41,6 +42,7 @@ body, html {
     opacity: 0;
     transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
     z-index: 1;
+    margin-bottom: 20px; /* Add margin to create space */
 }
 
 .show-button {
@@ -48,7 +50,7 @@ body, html {
 }
 
 .welcome-button:hover {
-    background-color: #FFC107; /* Slightly darker golden on hover */
+    background-color: #0B2E0B; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
@@ -73,7 +75,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #104410; /* Updated color */
     font-size: 2em;
     margin-bottom: 20px;
     z-index: 1;
@@ -94,12 +96,12 @@ body, html {
 .time {
     display: block;
     font-size: 1.5em;
-    color: gold;
+    color: #104410; /* Updated color */
 }
 
 .label {
     font-size: 0.8em;
-    color: white; /* Ensure the label is visible */
+    color: #104410; /* Updated color */
 }
 
 .landing-buttons {
@@ -112,7 +114,7 @@ body, html {
 }
 
 .landing-button {
-    background-color: #FFD700;
+    background-color: #104410; /* Updated color */
     color: black; /* Change text color to black */
     border: none;
     padding: 10px 20px;
@@ -124,13 +126,13 @@ body, html {
 }
 
 .landing-button:hover {
-    background-color: #FFC107; /* Slightly darker golden on hover */
+    background-color: #0B2E0B; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 .info-header {
     text-align: center;
-    color: gold;
+    color: #104410; /* Updated color */
     margin-bottom: 20px;
 }
 
@@ -156,7 +158,7 @@ body, html {
 }
 
 .back-button button {
-    background-color: #FFD700;
+    background-color: #104410; /* Updated color */
     color: black; /* Change text color to black */
     border: none;
     padding: 10px 20px;
@@ -168,13 +170,13 @@ body, html {
 }
 
 .back-button button:hover {
-    background-color: #FFC107; /* Slightly darker golden on hover */
+    background-color: #0B2E0B; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 .collage-header {
     text-align: center;
-    color: gold;
+    color: #104410; /* Updated color */
     margin-bottom: 20px;
 }
 
@@ -206,4 +208,20 @@ body, html {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+.gallery-image {
+    max-width: 200px; /* Set a maximum width for images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
