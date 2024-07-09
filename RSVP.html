@@ -9,34 +9,42 @@
 <body>
     <div class="container" id="rsvp-page">
         <h1>RSVP</h1>
-        <form id="rsvp-form" action="https://script.google.com/macros/s/AKfycbz-X3u2qnSsX2V93yZLCuELvMSd3Fka7E_KyDZlnckcMhT9E-dfwLiPO38B47sj4Ayt/exec" method="post">
-            <label for="number-of-guests">How many will come:</label>
-            <input type="number" id="number-of-guests" name="number-of-guests" required>
-
-            <label for="guest1-name">Name of Guest 1:</label>
-            <input type="text" id="guest1-name" name="guest1-name" required>
-
-            <label for="guest1-age">Age of Guest 1:</label>
-            <input type="number" id="guest1-age" name="guest1-age" required>
-
-            <label for="guest1-mobile">Mobile Number of Guest 1:</label>
-            <input type="tel" id="guest1-mobile" name="guest1-mobile" required>
-
-            <label for="guest2-name">Name of Guest 2:</label>
-            <input type="text" id="guest2-name" name="guest2-name" required>
-
-            <label for="guest2-age">Age of Guest 2:</label>
-            <input type="number" id="guest2-age" name="guest2-age" required>
-
-            <label for="guest2-mobile">Mobile Number of Guest 2:</label>
-            <input type="tel" id="guest2-mobile" name="guest2-mobile" required>
-
-            <label for="allergies">Allergies:</label>
-            <input type="text" id="allergies" name="allergies" required>
-
+        <form id="rsvp-form" action="YOUR_GOOGLE_APPS_SCRIPT_URL" method="post">
+            <div class="form-group">
+                <label for="number-of-guests">How many will come:</label>
+                <input type="number" id="number-of-guests" name="number-of-guests" required>
+            </div>
+            <div class="form-group">
+                <label for="guest1-name">Name of Guest 1:</label>
+                <input type="text" id="guest1-name" name="guest1-name" required>
+            </div>
+            <div class="form-group">
+                <label for="guest1-age">Age of Guest 1:</label>
+                <input type="number" id="guest1-age" name="guest1-age" required>
+            </div>
+            <div class="form-group">
+                <label for="guest1-mobile">Mobile Number of Guest 1:</label>
+                <input type="tel" id="guest1-mobile" name="guest1-mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="guest2-name">Name of Guest 2:</label>
+                <input type="text" id="guest2-name" name="guest2-name" required>
+            </div>
+            <div class="form-group">
+                <label for="guest2-age">Age of Guest 2:</label>
+                <input type="number" id="guest2-age" name="guest2-age" required>
+            </div>
+            <div class="form-group">
+                <label for="guest2-mobile">Mobile Number of Guest 2:</label>
+                <input type="tel" id="guest2-mobile" name="guest2-mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="allergies">Allergies:</label>
+                <input type="text" id="allergies" name="allergies" required>
+            </div>
             <button type="submit">Submit</button>
         </form>
-        <button class="back-button" onclick="location.href='landing.html'">Back to Home</button> <!-- Added Back to Home button -->
+        <button class="back-button" onclick="location.href='landing.html'">Back to Home</button>
     </div>
 </body>
 </html>
