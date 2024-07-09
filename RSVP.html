@@ -9,7 +9,7 @@
 <body>
     <div class="container" id="rsvp-page">
         <h1>RSVP</h1>
-        <form>
+        <form id="rsvp-form" action="https://script.google.com/macros/s/AKfycbz-X3u2qnSsX2V93yZLCuELvMSd3Fka7E_KyDZlnckcMhT9E-dfwLiPO38B47sj4Ayt/exec" method="post">
             <label for="number-of-guests">How many will come:</label>
             <input type="number" id="number-of-guests" name="number-of-guests" required>
 
@@ -36,6 +36,7 @@
 
             <button type="submit">Submit</button>
         </form>
+        <button class="back-button" onclick="location.href='landing.html'">Back to Home</button> <!-- Added Back to Home button -->
     </div>
 </body>
 </html>
