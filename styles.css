@@ -86,6 +86,13 @@ body, html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
+.rotated-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Add margin to space out elements */
+    transform: rotate(180deg); /* Rotate the image 180 degrees */
+}
+
 @keyframes moveDiamonds {
     0% { transform: translateY(0); }
     100% { transform: translateY(-100%); }
