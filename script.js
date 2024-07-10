@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show the button after 5 seconds
     setTimeout(() => {
         startButton.classList.add('show-button');
-    }, 5000);
+    }, 1000);
 
     // Navigate to the landing page on button click
     startButton.addEventListener('click', () => {
