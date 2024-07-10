@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #F7E7CE; /* Updated background color */
 }
 
 .container {
@@ -9,10 +10,10 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh; /* Ensure full viewport height */
     background-color: #F7E7CE; /* Updated background color */
-    overflow: hidden;
     padding: 20px; /* Add padding to prevent touching edges */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
 .hidden {
@@ -163,6 +164,9 @@ body, html {
     padding: 20px;
     background-color: rgba(26, 26, 26, 0.8);
     border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .info-content ul {
@@ -205,6 +209,9 @@ body, html {
     background-color: rgba(26, 26, 26, 0.8);
     border-radius: 10px;
     margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery {
@@ -212,6 +219,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    max-width: 100%;
 }
 
 .gallery img {
@@ -226,9 +234,10 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 #rsvp-page .form-group {
