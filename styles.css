@@ -221,12 +221,6 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.info-header {
-    text-align: center;
-    color: #3e9d5b; /* Updated color */
-    margin-bottom: 20px;
-}
-
 /* RSVP Form Styles */
 #rsvp-page form {
     display: flex;
