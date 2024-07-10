@@ -72,7 +72,7 @@ body, html {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Faster transition for opacity */
+    transition: opacity 0.25s ease-in-out; /* Faster transition for opacity */
     z-index: 1;
     margin-top: 20px; /* Ensure the button is below the countdown */
 }
@@ -202,12 +202,19 @@ body, html {
     margin: auto;
 }
 
+#rsvp-page .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Space between form groups */
+}
+
 #rsvp-page label {
     font-weight: bold;
     color: #3e9d5b; /* Updated color */
+    margin-bottom: 5px; /* Space between label and input */
 }
 
-#rsvp-page input, #rsvp-page button {
+#rsvp-page input {
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
@@ -218,6 +225,9 @@ body, html {
     background-color: #3e9d5b; /* Updated color */
     color: #F7E7CE;
     border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
     cursor: pointer;
 }
 
