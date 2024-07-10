@@ -192,6 +192,41 @@ body, html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
+.collage-header {
+    text-align: center;
+    color: #3e9d5b; /* Updated color */
+    margin-bottom: 20px;
+}
+
+.collage-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-header {
+    text-align: center;
+    color: #3e9d5b; /* Updated color */
+    margin-bottom: 20px;
+}
+
 /* RSVP Form Styles */
 #rsvp-page form {
     display: flex;
