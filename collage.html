@@ -10,25 +10,33 @@
     <div class="container" id="collage-page">
         <h1 class="collage-header">Collage</h1>
         <div class="collage-content">
-            <div class="gallery">
-                <img src="images/photo1.jpg" alt="Photo 1">
-                <img src="images/photo2.jpg" alt="Photo 2">
-                <img src="images/photo3.jpg" alt="Photo 3">
-                <img src="images/photo4.jpg" alt="Photo 4">
-                <img src="images/photo4.jpg" alt="Photo 5">
-                <img src="images/photo4.jpg" alt="Photo 6">
-                <img src="images/photo4.jpg" alt="Photo 7">
-                <img src="images/photo4.jpg" alt="Photo 8">
-                <img src="images/photo4.jpg" alt="Photo 9">
-                <img src="images/photo4.jpg" alt="Photo 10">
-                <img src="images/photo4.jpg" alt="Photo 11">
-                <img src="images/photo4.jpg" alt="Photo 12">
-                <img src="images/photo4.jpg" alt="Photo 13">
-                <img src="images/photo4.jpg" alt="Photo 14">
-                <img src="images/photo4.jpg" alt="Photo 15">
+            <form id="upload-form">
+                <label for="image-upload">Upload a picture:</label>
+                <input type="file" id="image-upload" accept="image/*">
+                <button type="button" onclick="uploadImage()">Upload</button>
+            </form>
+            <div class="gallery" id="gallery">
+                <!-- Uploaded images will appear here -->
             </div>
         </div>
         <button class="back-button" onclick="location.href='landing.html'">Back to Home</button>
     </div>
+    <script>
+        function uploadImage() {
+            const fileInput = document.getElementById('image-upload');
+            const gallery = document.getElementById('gallery');
+
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'Uploaded Image';
+                    gallery.appendChild(img);
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+    </script>
 </body>
 </html>
