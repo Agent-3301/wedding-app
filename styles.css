@@ -28,13 +28,12 @@ body, html {
 }
 
 .welcome-text {
-    font-size: 2em;
+    font-size: 3em; /* Increased font size */
     color: #3e9d5b; /* Updated color */
     margin-bottom: 20px;
     text-align: center; /* Center text */
     z-index: 1;
     font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow */
 }
 
 .countdown-timer {
